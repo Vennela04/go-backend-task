@@ -1,0 +1,10 @@
+version: "1"
+packages:
+  - name: "db"
+    path: "../"                  # output will go to internal/db
+    engine: "postgresql"
+    schema: "../../schema.sql"   # path from sqlc.yaml to schema.sql in project root
+    queries: "queries.sql"       # queries.sql is in the same folder
+    emit_json_tags: true
+    emit_prepared_queries: false
+    emit_interface: false
