@@ -46,23 +46,17 @@ CREATE TABLE users (
 
 3️⃣ Run the Project
 Clone the repository:
-
-bash
-Copy code
 git clone https://github.com/<your-username>/go-backend-task.git
+
 cd go-backend-task
+
 Install dependencies:
-
-bash
-Copy code
 go mod tidy
+
 Run the server:
-
-bash
-Copy code
 go run ./cmd/server
-Your API will be live on:
 
+Your API will be live on:
 http://localhost:8080
 
 🧪 API Endpoints
@@ -71,30 +65,21 @@ http://localhost:8080
 POST /users
 
 Request Body:
-
-json
-Copy code
 {
   "name": "Alice",
   "dob": "1990-05-10"
 }
 Response:
-
-json
-Copy code
 {
   "id": 1,
   "name": "Alice",
   "dob": "1990-05-10",
   "age": 35
 }
+
 📄 Get All Users
 GET /users
-
-Response:
-
-json
-Copy code
+Response
 [
   {
     "id": 1,
